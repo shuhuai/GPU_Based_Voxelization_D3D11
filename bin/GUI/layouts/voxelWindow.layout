@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="DefaultWindow" name="DefaultWindow" >
+        <Property name="Area" value="{{0.0015625,1},{0,1},{1.00156,129},{1,117}}" />
+        <Property name="Text" value="Show Raw Data" />
+        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+        <Window type="Vanilla/FrameWindow" name="Res" >
+            <Property name="Area" value="{{0,17},{0,270},{0.3,-153},{0.3,206}}" />
+            <Property name="CloseButtonEnabled" value="false" />
+            <AutoWindow namePath="__auto_titlebar__" >
+                <Window type="Vanilla/Label" name="Label" >
+                    <Property name="Area" value="{{-0.0046729,-4},{0,0},{-0.0046729,124},{0,32}}" />
+                    <Property name="Font" value="DejaVuSans-10-NoScale" />
+                    <Property name="Text" value="Resolution" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                </Window>
+            </AutoWindow>
+            <Window type="Vanilla/RadioButton" name="Res128" >
+                <Property name="Area" value="{{0.035,0},{0.33188,0},{0.035,256},{0.33188,32}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="128" />
+            </Window>
+            <Window type="Vanilla/RadioButton" name="Res256" >
+                <Property name="Area" value="{{0.035,0},{0.0341879,0},{0.035,256},{0.0341879,32}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="256" />
+            </Window>
+            <Window type="Vanilla/RadioButton" name="Res64" >
+                <Property name="Area" value="{{0.035,0},{0.623932,1},{0.035,256},{0.623932,32}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="64" />
+            </Window>
+        </Window>
+        <Window type="Vanilla/FrameWindow" name="Process" >
+            <Property name="Area" value="{{0,17},{0.0791667,516},{0.3,-133},{0.347223,484}}" />
+            <Property name="Font" value="DejaVuSans-10-NoScale" />
+            <Property name="Text" value="Process Data" />
+            <Property name="CloseButtonEnabled" value="false" />
+            <Property name="SizingBorderThickness" value="0" />
+            <Window type="Vanilla/Button" name="Output" >
+                <Property name="Area" value="{{-0.243781,46},{-0.150717,113},{-0.243781,142},{-0.150717,145}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="Output" />
+            </Window>
+            <Window type="Vanilla/Button" name="Voxelization" >
+                <Property name="Area" value="{{-0.243781,45},{-0.110717,17},{-0.243781,141},{-0.110717,49}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="Voxelization" />
+            </Window>
+            <Window type="Vanilla/Label" name="Label" >
+                <Property name="Area" value="{{0,-19},{0,29},{0,109},{0,61}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="Filename:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            </Window>
+            <Window type="Vanilla/Editbox" name="Filename" >
+                <Property name="Area" value="{{0,8},{0,53},{0,119},{0,83}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+            </Window>
+        </Window>
+        <Window type="Vanilla/Combobox" name="ModelSelector" >
+            <Property name="Area" value="{{0,17},{0,30},{0,273},{0,286}}" />
+            <Property name="Font" value="DejaVuSans-10-NoScale" />
+            <Property name="ReadOnly" value="true" />
+            <Property name="ValidationString" value="11, 22" />
+            <Property name="ForceVertScrollbar" value="true" />
+            <AutoWindow namePath="__auto_editbox__" >
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="ReadOnly" value="true" />
+                <Property name="ValidationString" value="11, 22" />
+            </AutoWindow>
+            <AutoWindow namePath="__auto_droplist__" >
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="RestoreOldCapture" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="RestoreOldCapture" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="RestoreOldCapture" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="RestoreOldCapture" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="RestoreOldCapture" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="RestoreOldCapture" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </AutoWindow>
+            <AutoWindow namePath="__auto_button__" >
+                <Property name="HoverImage" value="Vanilla-Images/DropDownButtonHover" />
+                <Property name="NormalImage" value="Vanilla-Images/DropDownButtonNormal" />
+                <Property name="PushedImage" value="Vanilla-Images/DropDownButtonPushed" />
+            </AutoWindow>
+        </Window>
+        <Window type="WindowsLook/Label" name="ModelName" >
+            <Property name="Area" value="{{0,72},{0,-1},{0,200},{0,31}}" />
+            <Property name="Font" value="DejaVuSans-10-NoScale" />
+            <Property name="Text" value="Model" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+        </Window>
+        <Window type="Vanilla/FrameWindow" name="Info" >
+            <Property name="Area" value="{{0,17},{0,100},{0.3,-153},{0.3,36}}" />
+            <Property name="CloseButtonEnabled" value="false" />
+            <AutoWindow namePath="__auto_titlebar__" >
+                <Window type="Vanilla/Label" name="Label" >
+                    <Property name="Area" value="{{0,-4},{0,0},{0,124},{0,32}}" />
+                    <Property name="Font" value="DejaVuSans-10-NoScale" />
+                    <Property name="Text" value="Information" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                </Window>
+            </AutoWindow>
+            <Window type="Vanilla/RadioButton" name="Binary" >
+                <Property name="Area" value="{{0.035,0},{0.0341879,0},{0.035,256},{0.0341879,32}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="Binary" />
+                <Property name="GroupID" value="1" />
+            </Window>
+            <Window type="Vanilla/RadioButton" name="Normal" >
+                <Property name="Area" value="{{0.035,0},{0.33188,0},{0.035,256},{0.33188,32}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="Normal" />
+                <Property name="GroupID" value="1" />
+            </Window>
+            <Window type="Vanilla/RadioButton" name="Object" >
+                <Property name="Area" value="{{0.035,0},{0.623932,0},{0.035,256},{0.623932,32}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="Object" />
+                <Property name="GroupID" value="1" />
+            </Window>
+        </Window>
+        <Window type="Vanilla/FrameWindow" name="Raw" >
+            <Property name="Area" value="{{0.00234375,17},{0.0555556,400},{0.303125,-153},{0.290278,336}}" />
+            <Property name="CloseButtonEnabled" value="false" />
+            <AutoWindow namePath="__auto_titlebar__" >
+                <Window type="Vanilla/Label" name="Label" >
+                    <Property name="Area" value="{{0,-4},{0,0},{0,124},{0,32}}" />
+                    <Property name="Font" value="DejaVuSans-10-NoScale" />
+                    <Property name="Text" value="Raw Data" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                </Window>
+            </AutoWindow>
+            <Window type="Vanilla/Label" name="Label" >
+                <Property name="Area" value="{{-0.228856,-17},{0.371429,6},{-0.228856,111},{0.371429,38}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="Slice" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+            </Window>
+            <Window type="Vanilla/Checkbox" name="Display" >
+                <Property name="Area" value="{{-0.00995025,0},{0.0285714,0},{-0.00995025,128},{0.0285714,32}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="Display" />
+            </Window>
+            <Window type="WindowsLook/Spinner" name="Slice" >
+                <Property name="Area" value="{{0,36},{0,39},{0,117},{0,61}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="0" />
+                <Property name="MaximumValue" value="128" />
+                <Property name="MinimumValue" value="0" />
+                <AutoWindow namePath="__auto_editbox__" >
+                    <Property name="Font" value="DejaVuSans-10-NoScale" />
+                    <Property name="Text" value="0" />
+                    <Property name="ValidationString" value="-?\d*" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_incbtn__" >
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+                <AutoWindow namePath="__auto_decbtn__" >
+                    <Property name="MouseAutoRepeatEnabled" value="true" />
+                </AutoWindow>
+            </Window>
+        </Window>
+        <Window type="Vanilla/FrameWindow" name="Performance" >
+            <Property name="Area" value="{{0,400},{0,5},{0.3,313},{0.3,-70}}" />
+            <Property name="Alpha" value="0.8" />
+            <Property name="CloseButtonEnabled" value="false" />
+            <AutoWindow namePath="__auto_titlebar__" >
+                <Window type="Vanilla/Label" name="Label" >
+                    <Property name="Area" value="{{-0.0046729,-5},{0,0},{-0.0046729,123},{0,32}}" />
+                    <Property name="Font" value="DejaVuSans-10-NoScale" />
+                    <Property name="Text" value="Performance" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                </Window>
+            </AutoWindow>
+            <Window type="Vanilla/Label" name="Voxelize" >
+                <Property name="Area" value="{{0,3},{0,8},{0,205},{0,40}}" />
+                <Property name="Text" value="voxelization:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Vanilla/Label" name="Load" >
+                <Property name="Area" value="{{0,3},{0,44},{0,205},{0,76}}" />
+                <Property name="Text" value="Load:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+            <Window type="Vanilla/Label" name="Render" >
+                <Property name="Area" value="{{0,2},{0,81},{0,205},{0,113}}" />
+                <Property name="Text" value="Render:" />
+                <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                <Property name="HorzFormatting" value="LeftAligned" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

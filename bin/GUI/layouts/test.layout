@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<GUILayout version="4" >
+    <Window type="DefaultWindow" name="DefaultWindow" >
+        <Property name="Area" value="{{0,2},{0,1},{1,130},{1,89}}" />
+        <Property name="MaxSize" value="{{1,0},{1,0}}" />
+        <Window type="Vanilla/FrameWindow" name="FrameWindow2" >
+            <Property name="Area" value="{{0,17},{0,270},{0.3,-153},{0.3,206}}" />
+            <Property name="CloseButtonEnabled" value="false" />
+            <AutoWindow namePath="__auto_titlebar__" >
+                <Window type="Vanilla/Label" name="Label" >
+                    <Property name="Area" value="{{0,-4},{0,0},{0,124},{0,32}}" />
+                    <Property name="Font" value="DejaVuSans-10-NoScale" />
+                    <Property name="Text" value="Resolution" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                </Window>
+            </AutoWindow>
+            <Window type="Vanilla/Checkbox" name="Checkbox" >
+                <Property name="Area" value="{{0,-3},{0,49},{0,125},{0,81}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="128" />
+            </Window>
+            <Window type="Vanilla/Checkbox" name="Checkbox2" >
+                <Property name="Area" value="{{0,-3},{0,12},{0,125},{0,44}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="256" />
+            </Window>
+            <Window type="Vanilla/Checkbox" name="Checkbox3" >
+                <Property name="Area" value="{{0,-3},{0,83},{0,125},{0,115}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="64" />
+            </Window>
+        </Window>
+        <Window type="Vanilla/FrameWindow" name="FrameWindow3" >
+            <Property name="Area" value="{{0,17},{0.0791667,516},{0.3,-152},{0.379167,437}}" />
+            <Property name="Font" value="DejaVuSans-10-NoScale" />
+            <Property name="Text" value="Process Data" />
+            <Property name="CloseButtonEnabled" value="false" />
+            <Property name="SizingBorderThickness" value="0" />
+            <Window type="Vanilla/Button" name="Button" >
+                <Property name="Area" value="{{0,50},{0,56},{0,146},{0,88}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="Output" />
+            </Window>
+            <Window type="Vanilla/Button" name="Button2" >
+                <Property name="Area" value="{{0,52},{0,13},{0,148},{0,45}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="Voxelization" />
+            </Window>
+            <Window type="Vanilla/FrameWindow" name="FrameWindow3" >
+                <Property name="Area" value="{{0,17},{0,516},{0.3,-152},{0.3,437}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="Process Data" />
+                <Property name="CloseButtonEnabled" value="false" />
+                <Property name="SizingBorderThickness" value="0" />
+                <Window type="Vanilla/Button" name="Button" >
+                    <Property name="Area" value="{{0,50},{0,56},{0,146},{0,88}}" />
+                    <Property name="Font" value="DejaVuSans-10-NoScale" />
+                    <Property name="Text" value="Output" />
+                </Window>
+                <Window type="Vanilla/Button" name="Button2" >
+                    <Property name="Area" value="{{0,52},{0,13},{0,148},{0,45}}" />
+                    <Property name="Font" value="DejaVuSans-10-NoScale" />
+                    <Property name="Text" value="Voxelization" />
+                </Window>
+            </Window>
+        </Window>
+        <Window type="Vanilla/Combobox" name="Combobox" >
+            <Property name="Area" value="{{0,17},{0,30},{0,273},{0,286}}" />
+            <Property name="Font" value="DejaVuSans-10-NoScale" />
+            <Property name="ForceVertScrollbar" value="true" />
+            <AutoWindow namePath="__auto_editbox__" >
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+            </AutoWindow>
+            <AutoWindow namePath="__auto_droplist__" >
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <AutoWindow namePath="__auto_hscrollbar__" >
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="RestoreOldCapture" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="RestoreOldCapture" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="RestoreOldCapture" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+                <AutoWindow namePath="__auto_vscrollbar__" >
+                    <AutoWindow namePath="__auto_incbtn__" >
+                        <Property name="RestoreOldCapture" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_decbtn__" >
+                        <Property name="RestoreOldCapture" value="true" />
+                    </AutoWindow>
+                    <AutoWindow namePath="__auto_thumb__" >
+                        <Property name="RestoreOldCapture" value="true" />
+                    </AutoWindow>
+                </AutoWindow>
+            </AutoWindow>
+            <AutoWindow namePath="__auto_button__" >
+                <Property name="HoverImage" value="Vanilla-Images/DropDownButtonHover" />
+                <Property name="NormalImage" value="Vanilla-Images/DropDownButtonNormal" />
+                <Property name="PushedImage" value="Vanilla-Images/DropDownButtonPushed" />
+            </AutoWindow>
+        </Window>
+        <Window type="WindowsLook/Label" name="Label" >
+            <Property name="Area" value="{{0,72},{0,-1},{0,200},{0,31}}" />
+            <Property name="Font" value="DejaVuSans-10-NoScale" />
+            <Property name="Text" value="Model" />
+            <Property name="MaxSize" value="{{1,0},{1,0}}" />
+        </Window>
+        <Window type="Vanilla/FrameWindow" name="FrameWindow" >
+            <Property name="Area" value="{{0.0132813,0},{0.120833,0},{0.18125,0},{0.348611,0}}" />
+            <Property name="CloseButtonEnabled" value="false" />
+            <AutoWindow namePath="__auto_titlebar__" >
+                <Window type="Vanilla/Label" name="Label" >
+                    <Property name="Area" value="{{0,-4},{0,0},{0,124},{0,32}}" />
+                    <Property name="Font" value="DejaVuSans-10-NoScale" />
+                    <Property name="Text" value="Information" />
+                    <Property name="MaxSize" value="{{1,0},{1,0}}" />
+                </Window>
+            </AutoWindow>
+            <Window type="Vanilla/Checkbox" name="Checkbox" >
+                <Property name="Area" value="{{0,-3},{0,49},{0,125},{0,81}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="Normal" />
+            </Window>
+            <Window type="Vanilla/Checkbox" name="Checkbox2" >
+                <Property name="Area" value="{{0,-3},{0,12},{0,125},{0,44}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="Binary" />
+            </Window>
+            <Window type="Vanilla/Checkbox" name="Checkbox3" >
+                <Property name="Area" value="{{0,-3},{0,83},{0,125},{0,115}}" />
+                <Property name="Font" value="DejaVuSans-10-NoScale" />
+                <Property name="Text" value="Object" />
+            </Window>
+        </Window>
+    </Window>
+</GUILayout>

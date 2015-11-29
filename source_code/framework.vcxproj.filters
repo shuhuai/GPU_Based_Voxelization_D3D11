@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Voxelizer">
+      <UniqueIdentifier>{bd41095c-3c66-4e1a-9bdb-c7ff684e11ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shaders">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{6079778a-40d6-473e-9a11-8831d08b64fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\ModelLoader">
+      <UniqueIdentifier>{e3302204-cc54-417b-a90c-0d96686d1fd5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\ModelLoader\Obj">
+      <UniqueIdentifier>{c8d9bb42-9b26-4a40-8211-4bf1912bb842}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities\Carmera">
+      <UniqueIdentifier>{7328cb37-41ac-4aa0-8bd4-e6acf5923056}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Carmera.cpp">
+      <Filter>Utilities\Carmera</Filter>
+    </ClCompile>
+    <ClCompile Include="ConvertObj.cpp">
+      <Filter>Utilities\ModelLoader</Filter>
+    </ClCompile>
+    <ClCompile Include="objTester\list.cpp">
+      <Filter>Utilities\ModelLoader\Obj</Filter>
+    </ClCompile>
+    <ClCompile Include="objTester\obj_parser.cpp">
+      <Filter>Utilities\ModelLoader\Obj</Filter>
+    </ClCompile>
+    <ClCompile Include="objTester\objLoader.cpp">
+      <Filter>Utilities\ModelLoader\Obj</Filter>
+    </ClCompile>
+    <ClCompile Include="objTester\objTester.cpp">
+      <Filter>Utilities\ModelLoader\Obj</Filter>
+    </ClCompile>
+    <ClCompile Include="objTester\string_extra.cpp">
+      <Filter>Utilities\ModelLoader\Obj</Filter>
+    </ClCompile>
+    <ClCompile Include="Voxelizer.cpp">
+      <Filter>Voxelizer</Filter>
+    </ClCompile>
+    <ClCompile Include="voxelViewer.cpp">
+      <Filter>Voxelizer</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dutil.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="d3dApp.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="RawDataViewer.cpp">
+      <Filter>Voxelizer</Filter>
+    </ClCompile>
+    <ClCompile Include="profiler.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Carmera.h">
+      <Filter>Utilities\Carmera</Filter>
+    </ClInclude>
+    <ClInclude Include="ConvertObj.h">
+      <Filter>Utilities\ModelLoader</Filter>
+    </ClInclude>
+    <ClInclude Include="objTester\list.h">
+      <Filter>Utilities\ModelLoader\Obj</Filter>
+    </ClInclude>
+    <ClInclude Include="objTester\obj_parser.h">
+      <Filter>Utilities\ModelLoader\Obj</Filter>
+    </ClInclude>
+    <ClInclude Include="objTester\objLoader.h">
+      <Filter>Utilities\ModelLoader\Obj</Filter>
+    </ClInclude>
+    <ClInclude Include="objTester\string_extra.h">
+      <Filter>Utilities\ModelLoader\Obj</Filter>
+    </ClInclude>
+    <ClInclude Include="Voxelizer.h">
+      <Filter>Voxelizer</Filter>
+    </ClInclude>
+    <ClInclude Include="voxelViewer.h">
+      <Filter>Voxelizer</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dutil.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="d3dApp.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Vertex.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="RawDataViewer.h">
+      <Filter>Voxelizer</Filter>
+    </ClInclude>
+    <ClInclude Include="profiler.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Shaders\AppendVoxelList.hlsl">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\ShowRawData.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\voxelization.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\voxelViewer.fx">
+      <Filter>Shaders</Filter>
+    </None>
+    <None Include="Shaders\voxel.fx">
+      <Filter>Shaders</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Previewer.rc">
+      <Filter>Shaders</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="myicon.ico">
+      <Filter>Shaders</Filter>
+    </Image>
+  </ItemGroup>
+</Project>
